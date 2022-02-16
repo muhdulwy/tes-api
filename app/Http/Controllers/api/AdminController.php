@@ -40,7 +40,7 @@ class AdminController extends Controller
         Admin::create([
             "name" => $request->name,
             "username" => $request->username,
-            "password" => $request->password
+            "password" => bcrypt($request->password)
         ]);
 
         return response()->json([
@@ -63,7 +63,7 @@ class AdminController extends Controller
         $admin->update([
             "name" => $request->name,
             "username" => $request->username,
-            "password" => $request->password
+            "password" => bcrypt($request->password)
         ]);
 
         return response()->json([

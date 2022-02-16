@@ -10,6 +10,7 @@ class Artikel extends Model
     use HasFactory;
 
     protected $table = "artikel";
+    
     protected $fillable = [
         'judul',
         'isi',

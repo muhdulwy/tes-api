@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers\API;
 
-use App\Models\Admin;
 use Illuminate\Http\Request;
+use App\Models\Admin;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Str;
 
 class LoginController extends BaseController
 {    
